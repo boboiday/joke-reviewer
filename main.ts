@@ -7,4 +7,5 @@ const ENTRY =
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
+// One file out: entry.txt holds the joke, nothing else.
 writeFileSync(join(outDir, "entry.txt"), ENTRY, "utf8");
